@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        //Formatando Strings
+        let nome = window.prompt('Qual é o seu nome?');
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`);
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}.<br>`);
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.<br>`)
+
+        //Formatando Numbers
+        let numero = window.prompt('Digite um número:')
+        let num2 = numero.toFixed(2);
+        let num6 = numero.toFixed(6);
+        let emReais = numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        let numComVirgula = numero.toFixed(3).replace('.',',')
+        document.write(`Seu número com duas casas decimais: ${num2}.<br>`);
+        document.write(`Seu número com seis casas decimais: ${num6}.<br>`);
+        document.write(`Seu número com duas casas decimais e vírgula: ${numComVirgula}.<br>`);
+        document.write(`Seu número em Reais ${emReais}.<br>`);
+
+    </script>
+</body>
+</html>

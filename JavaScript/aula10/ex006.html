@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background-color: rgb(37, 155, 37);
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: 10px;
+        }
+
+        div#outra {
+            font: normal 15pt Arial;
+            background-color: rgb(37, 155, 37);
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()" onmousedown="baixo()" onmousewheel="seila()">
+        Interaja...
+    </div>
+    <div id="outra">
+        Outra Div
+    </div>
+    <script>
+        function clicar() {
+            let div = document.querySelector('#area')
+            div.style.background = 'red'
+            div.style.color = 'blue'
+            div.innerHTML = 'Clicou!!!'
+        }
+
+        function entrar() {
+            let on = document.querySelector('#area')
+            on.style.background = 'yellow'
+            on.style.color = 'green'
+            on.innerHTML = 'Entrou'
+        }
+
+        function saiu() {
+            let out = document.querySelector('#area')
+            out.style.background = 'brown'
+            out.style.color = 'black'
+            out.innerHTML = 'Saiu'
+        }
+
+        function baixo () {
+            let out = document.querySelector('#area')
+            out.style.background = 'gray'
+            out.style.color = 'black'
+            out.innerHTML = 'Seguro'
+        }
+
+        function seila() {
+            let out = document.querySelector('#area')
+            out.style.background = 'orange'
+            out.style.color = 'red'
+            out.innerHTML = 'Paraaaa!!!'
+        }
+
+        //addEventListener
+
+        let a = document.querySelector('#outra')
+
+        a.addEventListener('click', clica)
+        a.addEventListener('mouseenter', entra)
+        a.addEventListener('mouseout', sai)
+
+        function clica() {
+            a.innerHTML = 'Clicou'
+        }
+        function entra() {
+            a.innerHTML = 'Entrou'
+        }
+        function sai() {
+            a.innerHTML = 'Saiu'
+        }
+
+    </script>
+</body>
+</html>

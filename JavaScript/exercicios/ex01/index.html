@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nacionalizando</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oi&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1 id="titulo">QUAL É O SEU PAÍS?</h1>
     </header>
     <section>
-        <div>
-            
-        </div>
+        <div id="resultado"><p></p></div>
+        <label id="box" for="">
+            <input type="text" id="pais" placeholder="Digite aqui o seu País">
+        </label>
+        <br>
+        <label id="box" for="">
+            <input id="btn" type="button" value="Selecionar" onclick="paisSelecionado()">
+        </label> 
     </section>
     <footer>
-        <p>&copy; Kadu_and_you</p>
+        <p id="footer">&copy; Kadu_and_you</p>
     </footer>
 </body>
 </html>

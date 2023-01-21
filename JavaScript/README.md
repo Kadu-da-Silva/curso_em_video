@@ -13,3 +13,24 @@ Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprend
 #### Tratamento de Dados
 #### Operadores Pt.1
 #### Operadores Pt.2
+- ### Módulo C - Entendendo o DOM
+#### Introdução ao DOM
+#### Eventos DOM
+- ### Módulo D - Condições em JavaScript
+#### Condições (Pt.1)
+#### Condições (Pt.2)
+#### Exercícios JS (Pt.1)
+#### Exercícios JS (Pt.2)
+#### Exercícios JS (Pt.3)
+- ### Módulo E - Repetições em JavaScript
+#### Repetições (Pt.1)
+#### Repetições (Pt.2)
+#### Exercícios JS (Pt.4)
+#### Exercícios JS (Pt.5)
+#### Exercícios JS (Pt.6)
+- ### Módulo F - Avançando os estudos em JavaScript
+#### Variáveis Compostas
+#### Funções
+#### Exercícios JS (Pt.7)
+#### Exercícios JS (Pt.8)
+#### Próximos Passos
